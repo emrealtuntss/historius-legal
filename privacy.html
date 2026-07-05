@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Historius</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            max-width: 760px;
+            margin: 40px auto;
+            padding: 0 24px;
+            line-height: 1.6;
+            color: #222;
+            background: #fafafa;
+        }
+        h1 { border-bottom: 1px solid #ddd; padding-bottom: 8px; }
+        h2 { margin-top: 32px; }
+        .meta { color: #666; font-size: 14px; margin-bottom: 32px; }
+        a { color: #0066cc; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: July 5, 2026 · Last updated: July 5, 2026</p>
+
+    <h2>1. Overview</h2>
+    <p>Historius ("we", "our", "the app") is a personal content-publishing tool used by the operator of the Historius YouTube channel to automate uploads to platforms including TikTok, YouTube, Instagram, and Facebook. This policy explains what data the app processes and how that data is handled.</p>
+
+    <h2>2. Who This Policy Applies To</h2>
+    <p>Historius is a single-operator tool. It does not accept user sign-ups, does not host third-party accounts, and is not offered as a public service. This policy describes the data flow of the sole operator's account.</p>
+
+    <h2>3. Data We Access</h2>
+    <p>When the operator authorizes Historius through a platform's OAuth flow (for example, TikTok's Login Kit), the app receives:</p>
+    <ul>
+        <li>An access token and a refresh token, used to make authorized API requests on the operator's behalf.</li>
+        <li>Basic account information such as the account's open ID and display name (via <code>user.info.basic</code> scope for TikTok).</li>
+        <li>Video files and captions produced by the operator that are uploaded via the app.</li>
+    </ul>
+    <p>Historius does not access private messages, follower lists, or content produced by any account other than the operator's own.</p>
+
+    <h2>4. How Data Is Used</h2>
+    <p>The data listed above is used exclusively to:</p>
+    <ul>
+        <li>Upload the operator's video content to the operator's own accounts on TikTok, Instagram, Facebook, and YouTube.</li>
+        <li>Maintain a local queue of upload results (for auditing which videos were uploaded successfully).</li>
+        <li>Refresh access tokens when they expire.</li>
+    </ul>
+
+    <h2>5. How Data Is Stored</h2>
+    <p>Access tokens, refresh tokens, and video files are stored locally on the operator's own machine. They are not transmitted to any third party other than the API providers listed in the Terms of Service. The app has no cloud backend, no analytics service, and no third-party trackers.</p>
+
+    <h2>6. Data Sharing</h2>
+    <p>We do not sell, rent, or share any data with third parties, except when required to communicate with the platform APIs (TikTok, YouTube, Instagram, Facebook) for the purpose of uploading the operator's content.</p>
+
+    <h2>7. Data Retention</h2>
+    <p>Access tokens are retained on the operator's local machine until they expire or are manually revoked. Uploaded video files are retained locally as long as the operator chooses. Revoking authorization at the platform provider (e.g., in TikTok's app settings) also invalidates the token on Historius' side.</p>
+
+    <h2>8. Your Rights</h2>
+    <p>As the sole operator, you may at any time:</p>
+    <ul>
+        <li>Revoke Historius' access from TikTok's Settings → Security → Manage app permissions.</li>
+        <li>Delete the local token storage file (<code>tiktok_token.pkl</code>) to force re-authorization.</li>
+        <li>Delete any locally cached video files.</li>
+    </ul>
+
+    <h2>9. Children's Privacy</h2>
+    <p>Historius is not directed at children under 13 and does not knowingly collect any data from children.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. The "Last updated" date at the top reflects any changes.</p>
+
+    <h2>11. Contact</h2>
+    <p>Questions about this policy can be sent to: <a href="mailto:emre.alts52@gmail.com">emre.alts52@gmail.com</a></p>
+</body>
+</html>
